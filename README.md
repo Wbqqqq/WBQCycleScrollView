@@ -4,8 +4,10 @@
 ## 由来
 SDCycleScrollView很好用,但是我在开发中经常碰到一些需要自定义的视图，这个时候我就不得不去改他的源码，我就想基于他，封装一个更好用的框架，显然，SDCycleScrollView的作者貌似已经不更新了，我希望能把这个项目持续更新下去，如果有更好的写法，请推荐给我。
 
-### 用法
+### 先来看看效果
+![image](https://github.com/Wbqqqq/WbqCycleScrollView/blob/master/eeee.gif)
 
+### 用法
 <pre><code>
 self.v = [[WbqCycleScrollView alloc]initWithFrame:CGRectMake(0, 0, 375, 200)];
 self.v.pageControlStyle = WbqCycleCHIPageControlJalapenoStyle;
