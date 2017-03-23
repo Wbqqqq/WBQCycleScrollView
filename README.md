@@ -1,0 +1,2 @@
+# WbqCycleScrollView
+一款基于SDCycleScrollView基础上加强的无限轮转图，支持自定义视图。
