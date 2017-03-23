@@ -1,0 +1,37 @@
+PODS:
+  - CHIPageControl (0.0.5):
+    - CHIPageControl/Aji (= 0.0.5)
+    - CHIPageControl/Aleppo (= 0.0.5)
+    - CHIPageControl/Chimayo (= 0.0.5)
+    - CHIPageControl/Fresno (= 0.0.5)
+    - CHIPageControl/Jalapeno (= 0.0.5)
+    - CHIPageControl/Jaloro (= 0.0.5)
+    - CHIPageControl/Paprika (= 0.0.5)
+    - CHIPageControl/Puya (= 0.0.5)
+  - CHIPageControl/Aji (0.0.5)
+  - CHIPageControl/Aleppo (0.0.5)
+  - CHIPageControl/Chimayo (0.0.5)
+  - CHIPageControl/Fresno (0.0.5)
+  - CHIPageControl/Jalapeno (0.0.5)
+  - CHIPageControl/Jaloro (0.0.5)
+  - CHIPageControl/Paprika (0.0.5)
+  - CHIPageControl/Puya (0.0.5)
+
+DEPENDENCIES:
+  - CHIPageControl (from `https://github.com/ChiliLabs/CHIPageControl.git`)
+
+EXTERNAL SOURCES:
+  CHIPageControl:
+    :git: https://github.com/ChiliLabs/CHIPageControl.git
+
+CHECKOUT OPTIONS:
+  CHIPageControl:
+    :commit: c7cf7dc4fe132e2aba0a7878c9d38aad9f092336
+    :git: https://github.com/ChiliLabs/CHIPageControl.git
+
+SPEC CHECKSUMS:
+  CHIPageControl: f7c3f6986165d45add75d568480029d777c70777
+
+PODFILE CHECKSUM: cd2f6d4a9e05e87a958061f040256d94511c63ff
+
+COCOAPODS: 1.0.1
