@@ -45,6 +45,38 @@ NSString * const ID = @"cycleCell";
     [self setupMainView];
 }
 
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageNamesGroup:(NSArray *)imageNamesGroup
+{
+    WbqCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    cycleScrollView.localizationImageNamesGroup = [NSMutableArray arrayWithArray:imageNamesGroup];
+    return cycleScrollView;
+}
+
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame shouldInfiniteLoop:(BOOL)infiniteLoop imageNamesGroup:(NSArray *)imageNamesGroup
+{
+    WbqCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    cycleScrollView.infiniteLoop = infiniteLoop;
+    cycleScrollView.localizationImageNamesGroup = [NSMutableArray arrayWithArray:imageNamesGroup];
+    return cycleScrollView;
+}
+
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageURLStringsGroup:(NSArray *)imageURLsGroup
+{
+    WbqCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    cycleScrollView.imageURLStringsGroup = [NSMutableArray arrayWithArray:imageURLsGroup];
+    return cycleScrollView;
+}
+
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<WbqCycleScrollViewDelegate>)delegate placeholderImage:(UIImage *)placeholderImage
+{
+    WbqCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    cycleScrollView.delegate = delegate;
+    cycleScrollView.placeholderImage = placeholderImage;
+    
+    return cycleScrollView;
+}
+
+
 - (void)initialization
 {
 

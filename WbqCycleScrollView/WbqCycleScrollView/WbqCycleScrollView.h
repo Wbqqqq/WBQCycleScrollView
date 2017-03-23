@@ -26,6 +26,21 @@ typedef enum {
 
 @interface WbqCycleScrollView : UIView
 
+/** 初始轮播图（推荐使用） */
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<WbqCycleScrollViewDelegate>)delegate placeholderImage:(UIImage *)placeholderImage;
+
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageURLStringsGroup:(NSArray *)imageURLStringsGroup;
+
+
+/** 本地图片轮播初始化方式 */
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageNamesGroup:(NSArray *)imageNamesGroup;
+
+/** 本地图片轮播初始化方式2,infiniteLoop:是否无限循环 */
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame shouldInfiniteLoop:(BOOL)infiniteLoop imageNamesGroup:(NSArray *)imageNamesGroup;
+
+
+
+
 /** 分页控件,默认在右下角 */
 @property (nonatomic, weak) CHIBasePageControl * pageControl;
 

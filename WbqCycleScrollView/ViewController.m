@@ -37,10 +37,6 @@
     NSLog(@"%ld",(long)index);
 }
 
--(NSInteger)numberOfItemsInCycleScrollView:(WbqCycleScrollView *)cycleScrollView
-{
-    return 4;
-}
 
 -(UIView * )cellView:(WbqCycleScrollView *)cycleScrollView viewForItemAtIndex:(NSInteger)index
 {
