@@ -521,14 +521,22 @@ NSString * const ID = @"cycleCell";
 {
     long itemIndex = [self pageControlIndexWithCurrentCellIndex:indexPath.item];
     
-    if ([self.dataSource respondsToSelector:@selector(cellView:viewForItemAtIndex:)]) {
-        
-        WbqCustomCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-        
-        cell.itemView = [self.dataSource cellView:self viewForItemAtIndex:itemIndex];
-        
-        return cell;
+    if(self.dataSource)
+    {
+        if ([self.dataSource respondsToSelector:@selector(cellView:viewForItemAtIndex:)]) {
+            
+            WbqCustomCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+            
+            cell.itemView = [self.dataSource cellView:self viewForItemAtIndex:itemIndex];
+            
+            return cell;
+        }else
+        {
+            @throw [NSException exceptionWithName:@"WbqError" reason:@"(未实现cellView:viewForItemAtIndex:的数据源方法）" userInfo:nil];
+            return nil;
+        }
     }
+    
     
     WbqDefaultCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     

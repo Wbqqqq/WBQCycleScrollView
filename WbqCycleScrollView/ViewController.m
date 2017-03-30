@@ -38,12 +38,12 @@
 }
 
 
--(UIView * )cellView:(WbqCycleScrollView *)cycleScrollView viewForItemAtIndex:(NSInteger)index
-{
-    UIView * view = [[UIView alloc]initWithFrame:self.v.bounds];
-    view.backgroundColor = [UIColor colorWithRed:index * 0.1 green:0.5 blue:0.5 alpha:1];
-    return view;
-}
+//-(UIView * )cellView:(WbqCycleScrollView *)cycleScrollView viewForItemAtIndex:(NSInteger)index
+//{
+//    UIView * view = [[UIView alloc]initWithFrame:self.v.bounds];
+//    view.backgroundColor = [UIColor colorWithRed:index * 0.1 green:0.5 blue:0.5 alpha:1];
+//    return view;
+//}
 
 
 - (void)didReceiveMemoryWarning {
